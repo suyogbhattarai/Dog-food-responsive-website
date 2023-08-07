@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  font-family: $f2;
+  font-weight: 400;
+}
+.con {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0px 30px;
+
+  @include res(682px) {
+    max-width: 980px;
+    margin: auto;
+    padding: 0px 30px;
+  }
+}
+.hero {
+  background: url(http://sangalotech.com/html/15/assets/images/hero-banner.jpg);
+  background-size: cover;
+  
+  max-width: 100%;
+  object-fit: cover;
+  padding-bottom: 250px;
+  
+  color: $wt;
+  header {
+    @include res(682px) {
+      background: $wt;
+      color: black;
+    }
+
+    padding: 10px 0px;
+
+    .flex {
+      @include flex(space-between, center);
+    }
+
+    .logo {
+      font-family: $f1;
+      font-weight: 400;
+      font-size: 3vw;
+   
+      @include res(682px) {
+        order: 2;
+        
+      }
+    }
+
+    nav {
+      flex-grow: 1;
+      margin-left: 50px;
+      text-align: center;
+      @include res(682px) {
+        flex-grow: 0;
+        
+        order: 1;
+        display: flex;
+        justify-content: start;
+        font-size: 1.2vw;
+        margin-left: 0px;
+        
+      }
+      span {
+        display: none;
+        @include res(682px) {
+          display: block;
+          font-size: 3vw;
+        }
+      }
+      .menu {
+        margin-right: auto;
+      
+        ul {
+         
+          @include flex(start, center);
+          @include res(682px) {
+            display: none;
+          }
+          gap: 20px;
+          list-style: none;
+        
+          a {
+            font-family: $f2;
+            font-weight: 700;
+            text-decoration: none;
+            color: $wt;
+            font-size: 1.6vw
+          
+          }
+        }
+      }
+    }
+    .icons {
+      @include flex(start, start);
+      gap: 20px;
+      font-size: 1.7vw;
+      @include res(682px) {
+        font-size: 1.7vw;
+        order: 3;
+      }
+    }
+  }
+  &-content {
+    margin-right: 400px;
+    margin-top: 50px;
+    text-align: center;
+    width: 65%;
+  
+
+    h2 {
+      font-weight: 400;
+      font-family: $f3;
+      font-size: 6vw;
+      @include res()
+     
+    }
+    h1 {
+      font-weight: 400;
+      font-family: $f3;
+      font-size: 12vw;
+   
+    }
+    p {
+      font-family: $f2;
+      font-weight: 400;
+      font-size: 1.6vw;
+      margin: 3px 0px;
+   
+    }
+    button {
+      border: none;
+      background-color: black;
+      color: $wt;
+      font-family: $f2;
+      padding: 5px 20px;
+      border-radius: 50px;
+      margin-top: 10px;
+      font-size: 1.4vw;
+    
+    }
+  }
+}
+.content {
+  text-align: center;
+  font-family: $f2;
+  
+  h2 {
+    display: inline-block;
+    font-size: 4vw;
+    margin: 15px 0px;
+  }
+  .top {
+    color: $o;
+  }
+  .flex {
+    @include flex(center, center);
+    gap: 20px;
+    @include res(480px){
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .top-category {
+    margin: 35px 0px;
+    
+    @include res (480px){
+      
+    }
+    .section {
+      .category1{
+        width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+      .card {
+        position: relative;
+        margin-top: 40px;
+        
+        img {
+          width: 390px;
+          border-radius: 30px;
+        }
+        .card-content {
+          position: absolute;
+          bottom: 90px;
+          text-align: start;
+          left: 15px;
+          width: 55%;
+          p{font-size: 0.8rem;font-weight: 700;}
+          
+          h2{font-size: 1.8rem;font-weight: 700;}
+          button{padding: 10px 15px;border-radius: 50px;border: none;background-color: black;color: $wt;font-size: 0.8rem;}
+        }
+      }
+    }
+  }
+}

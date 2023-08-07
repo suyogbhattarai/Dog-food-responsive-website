@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+.con {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0px 30px;
+}
+@media (max-width: 682px) {
+  .con {
+    max-width: 980px;
+    margin: auto;
+    padding: 0px 30px;
+  }
+}
+
+.hero {
+  background: url(http://sangalotech.com/html/15/assets/images/hero-banner.jpg);
+  background-size: cover;
+  max-width: 100%;
+  padding-bottom: 250px;
+  color: white;
+}
+@media (max-width: 682px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
+.hero header {
+  padding: 10px 0px;
+}
+@media (max-width: 682px) {
+  .hero header {
+    background: white;
+    color: black;
+  }
+}
+.hero header .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+}
+.hero header .logo {
+  font-family: "Carter One", cursive;
+  font-weight: 400;
+  font-size: 3vw;
+}
+@media (max-width: 682px) {
+  .hero header .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.hero header nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 50px;
+  text-align: center;
+}
+@media (max-width: 682px) {
+  .hero header nav {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    font-size: 1.2vw;
+    margin-left: 0px;
+  }
+}
+.hero header nav span {
+  display: none;
+}
+@media (max-width: 682px) {
+  .hero header nav span {
+    display: block;
+    font-size: 3vw;
+  }
+}
+.hero header nav .menu {
+  margin-right: auto;
+}
+.hero header nav .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+  gap: 20px;
+  list-style: none;
+}
+@media (max-width: 682px) {
+  .hero header nav .menu ul {
+    display: none;
+  }
+}
+.hero header nav .menu ul a {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6vw;
+}
+.hero header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+  gap: 20px;
+  font-size: 1.7vw;
+}
+@media (max-width: 989px) {
+  .hero header .icons {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+.hero-content {
+  margin-right: 400px;
+  margin-top: 50px;
+  text-align: center;
+  width: 65%;
+}
+.hero-content h2 {
+  font-weight: 400;
+  font-family: "Bangers", cursive;
+  font-size: 6vw;
+  @in;
+}
+.hero-content h1 {
+  font-weight: 400;
+  font-family: "Bangers", cursive;
+  font-size: 12vw;
+}
+.hero-content p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6vw;
+  margin: 3px 0px;
+}
+.hero-content button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 5px 20px;
+  border-radius: 50px;
+  margin-top: 10px;
+  font-size: 1.4vw;
+}
+
+.content {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+.content h2 {
+  display: inline-block;
+  font-size: 4vw;
+  margin: 15px 0px;
+}
+.content .top {
+  color: orange;
+}
+.content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .content .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+.content .top-category {
+  margin: 35px 0px;
+}
+.content .top-category .section .category1 {
+  width: 200px;
+}
+.content .top-category .section .category1 img {
+  width: 100%;
+}
+.content .top-category .section .card {
+  position: relative;
+  margin-top: 40px;
+}
+.content .top-category .section .card img {
+  width: 390px;
+  border-radius: 30px;
+}
+.content .top-category .section .card .card-content {
+  position: absolute;
+  bottom: 90px;
+  text-align: start;
+  left: 15px;
+  width: 55%;
+}
+.content .top-category .section .card .card-content p {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.content .top-category .section .card .card-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.content .top-category .section .card .card-content button {
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=style.css.map */
